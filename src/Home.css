@@ -1,0 +1,151 @@
+/* Home.jsx */
+
+body {
+    background-color: #000;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.redd.it/omvs6fnuwd271.gif") no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: -1;
+    animation: flicker 1.5s infinite alternate;
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.4; }
+  }
+  
+  .terminal-effect {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  .typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .cursor {
+    width: 10px;
+    background: #0f0;
+    animation: blink 0.8s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px #0ff;
+    overflow: hidden;
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+    z-index: 1000;
+  }
+  
+  .nav-link {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+  
+  .content-container {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-container {
+    text-align: center;
+    height: 78vh;
+  }
+  
+  .glitch-text {
+    font-size: 2.5rem;
+    text-shadow: 4px 4px 0px #ff00ff, -4px -4px 0px #00ffff;
+    animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 3px); }
+    50% { transform: translate(3px, -3px); }
+    75% { transform: translate(-3px, -3px); }
+    100% { transform: translate(3px, 3px); }
+  }
+  
+  .neon-button {
+    background-color: transparent;
+    border: 2px solid #0ff;
+    color: #0ff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .neon-button:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 10px #0ff;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+  }
+
+  .button{
+    padding: 10px;
+  }
